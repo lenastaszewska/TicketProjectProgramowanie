@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfTicketProject.Windows.AddTicket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTicketProject.Windows"
+        mc:Ignorable="d"
+        Title="AddTicket" Height="450" Width="400">
+    <Grid Background="#FBFEFB">
+        <StackPanel Margin="20" Orientation="Vertical">
+            <TextBlock Text="Dodaj nowy bilet" FontFamily="Georgia" Foreground="#3f6c51" FontWeight="Bold" FontSize="20" Margin="0,0,0,10"/>
+
+            <StackPanel Margin="0,10">
+                <TextBlock Text="Login" Foreground="Black"/>
+                <ComboBox x:Name="UserNameComboBox" Margin="0,2" Height="25"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,10">
+                <TextBlock Text="Cena biletu" Foreground="Black"/>
+                <TextBox x:Name="priceTextBox" Margin="0,2" Height="25"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,10">
+                <TextBlock Text="Miasto" Foreground="Black"/>
+                <TextBox x:Name="placeTextBox" Margin="0,2" Height="25"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,10">
+                <TextBlock Text="Artysta" Foreground="Black"/>
+                <TextBox x:Name="artistTextBox" Margin="0,2" Height="25"/>
+            </StackPanel>
+
+            <Button Content="Dodaj nowy bilet" Click="AddTicketBtn_Click" Width="150" Height="35" Background="#ffc145" Foreground="#a62639" FontFamily="Georgia" FontWeight="Bold" Margin="0,20,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

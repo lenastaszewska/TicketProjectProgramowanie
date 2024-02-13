@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfTicketProject.Windows.UpdateTicket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTicketProject.Windows"
+        mc:Ignorable="d"
+        Title="UpdateTicket" Height="350" Width="700">
+    <Grid>
+        <Border BorderBrush="#CCCCCC" BorderThickness="1" CornerRadius="10" Margin="10">
+            <StackPanel Margin="10" Orientation="Vertical">
+                <TextBlock Text="Aktualizacja danych biletu" FontWeight="Bold" FontFamily="Georgia" Margin="5" Foreground="#8367c7" />
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Login" FontStyle="Italic" Foreground="Black" />
+                    <ComboBox x:Name="UserNameComboBox" Margin="0,2" BorderBrush="#CCCCCC" BorderThickness="1"  />
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Cena" FontStyle="Italic" Foreground="Black" />
+                    <TextBox x:Name="PriceTextBox" Margin="0,2" BorderBrush="#CCCCCC" BorderThickness="1" />
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Miasto" FontStyle="Italic" Foreground="Black" />
+                    <TextBox x:Name="PlaceTextBox" Margin="0,2" BorderBrush="#CCCCCC" BorderThickness="1" />
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <TextBlock Text="Artysta/Artyści" FontStyle="Italic" Foreground="Black" />
+                    <TextBox x:Name="ArtistTextBox" Margin="0,2" BorderBrush="#CCCCCC" BorderThickness="1" />
+                </StackPanel>
+
+                <Button Content="Aktualizuj bilet" Click="UpdateTicketBtn_Click" Width="150" Height="30" Margin="5" Background="#f39a9d" Foreground="#8367c7" FontSize="15" FontWeight="Bold" FontFamily="Georgia" BorderBrush="#CCCCCC" BorderThickness="1" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

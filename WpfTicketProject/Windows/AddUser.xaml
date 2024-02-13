@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfTicketProject.Windows.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTicketProject.Windows"
+        mc:Ignorable="d"
+        Title="AddUser" Height="370" Width="400">
+    <Grid Background="#FBFEFB">
+        <StackPanel Margin="20" Orientation="Vertical">
+            <TextBlock Text="Dodaj Nowego Użytkownika" FontFamily="Georgia" Foreground="#3f6c51" FontWeight="Bold" FontSize="20" Margin="0,0,0,10"/>
+
+            <StackPanel Margin="0,10">
+                <TextBlock Text="Imię" Foreground="Black"/>
+                <TextBox x:Name="NameTextBox" Margin="0,2" Height="25"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,10">
+                <TextBlock Text="Nazwisko" Foreground="Black"/>
+                <TextBox x:Name="SurnameTextBox" Margin="0,2" Height="25"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,10">
+                <TextBlock Text="Adres E-Mail" Foreground="Black"/>
+                <TextBox x:Name="EmailTextBox" Margin="0,2" Height="25"/>
+            </StackPanel>
+
+            <Button Content="Dodaj" Click="AddUserBtn_Click" Width="150" Height="35" Background="#ffc145" Foreground="#a62639" FontFamily="Georgia" FontWeight="Bold" Margin="0,20,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
